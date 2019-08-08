@@ -35,7 +35,7 @@ class TaskTest {
     @ValueSource(ints = {10, 11, 12})
     void levelEducationAchievementsHighLevel(int grade) {
         String actual = unit.levelEducationAchievements(grade);
-        assertEquals("Sufficient", actual);
+        assertEquals("High", actual);
     }
 
     @ParameterizedTest
