@@ -40,4 +40,18 @@ public class Task {
     public int compactDiscs(int numberOfDiscs) {
         return 0;
     }
+
+    /* https://www.e-olymp.com/en/problems/918
+    Which quarter?
+        It set a point with co-ordinates х and y. Define, in what co-ordinate quarter it is located.
+
+    Input
+        In a unique line through a blank 2 material numbers - co-ordinates of a point are set, value of co-ordinates on the module do not exceed 100.
+
+    Output
+        The singular is the number of a corresponding quarter, or 0 if unequivocally define a quarter it is impossible.
+     */
+    public int whichQuarter(int x, int y) {
+        return 0;
+    }
 }
