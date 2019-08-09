@@ -74,7 +74,10 @@ public class Task {
         Print the minimal sum to buy n disсs.
  */
     public int compactDiscs(int numberOfDiscs) {
-        return 0;
+        int hundredDiskPackCount = numberOfDiscs / 100;
+        int twentyDiskPackCount = (numberOfDiscs - hundredDiskPackCount * 100) / 20;
+        int oneDiskPackCount = numberOfDiscs - hundredDiskPackCount * 100 - twentyDiskPackCount * 20;
+        return hundredDiskPackCount * 100 + twentyDiskPackCount * 30 + oneDiskPackCount * 2;
     }
 
     /* https://www.e-olymp.com/en/problems/918
