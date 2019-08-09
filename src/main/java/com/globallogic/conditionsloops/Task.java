@@ -12,6 +12,24 @@ public class Task {
         Print Initial for elementary level (grade from 1 to 3), Average for average level (grade from 4 to 6), Sufficient for sufficient level (grade from 7 to 9) and High for high level (grade from 10 to 12).
     */
     public String levelEducationAchievements(int grade) {
+        switch (grade) {
+            case 1:
+            case 2:
+            case 3:
+                return "Initial";
+            case 4:
+            case 5:
+            case 6:
+                return "Average";
+            case 7:
+            case 8:
+            case 9:
+                return "Sufficient";
+            case 10:
+            case 11:
+            case 12:
+                return "High";
+        }
         return null;
     }
 
@@ -25,6 +43,24 @@ public class Task {
         For spring months print Spring, for summer - Summer, for autumn - Autumn and for winter - Winter.
      */
     public String season(int month) {
+        switch (month) {
+            case 12:
+            case 1:
+            case 2:
+                return "Winter";
+            case 3:
+            case 4:
+            case 5:
+                return "Spring";
+            case 6:
+            case 7:
+            case 8:
+                return "Summer";
+            case 9:
+            case 10:
+            case 11:
+                return "Autumn";
+        }
         return null;
     }
 
