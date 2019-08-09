@@ -54,4 +54,32 @@ public class Task {
     public int whichQuarter(int x, int y) {
         return 0;
     }
+
+    /*https://www.e-olymp.com/en/problems/903
+    First or last?
+        Three digit number is given. What digit is bigger: the first digit or the last digit?
+
+    Input
+        One three digit number.
+
+    Output
+        Print the bigger digit between first and last. In case of equality, print "=" (without quotes).
+    */
+    public String firstOrLast(int number) {
+        return null;
+    }
+
+    /*
+    Median number
+        Three different numbers a, b, c are given. Print the median number.
+
+    Input
+        Integers a, b, c that do not exceed 1000 by absolute value.
+
+    Output
+        Print the median among three numbers.
+     */
+    public int medianNumber(int a, int b, int c) {
+        return 0;
+    }
 }

@@ -155,4 +155,42 @@ class TaskTest {
         int actual = unit.whichQuarter(0, 3);
         assertEquals(0, actual);
     }
+
+    @Test
+    void firstOrLastFirstBigger() {
+        String actual = unit.firstOrLast(123);
+        assertEquals("3", actual);
+    }
+
+    @Test
+    void firstOrLastLastBigger() {
+        String actual = unit.firstOrLast(721);
+        assertEquals("7", actual);
+    }
+
+    @Test
+    void firstOrLastEqual() {
+        String actual = unit.firstOrLast(525);
+        assertEquals("=", actual);
+    }
+
+    @Test
+    void medianNumberFirstNumber() {
+        int actual = unit.medianNumber(4, 1, 8);
+        assertEquals(4, actual);
+    }
+
+    @Test
+    void medianNumberSecondNumber() {
+        int actual = unit.medianNumber(2, 5, 8);
+        assertEquals(5, actual);
+    }
+
+    @Test
+    void medianNumberThirdNumber() {
+        int actual = unit.medianNumber(2, 5, 3);
+        assertEquals(3, actual);
+    }
+
+
 }
