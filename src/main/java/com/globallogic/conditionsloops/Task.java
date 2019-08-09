@@ -69,7 +69,7 @@ public class Task {
         return null;
     }
 
-    /*
+    /*https://www.e-olymp.com/en/problems/108
     Median number
         Three different numbers a, b, c are given. Print the median number.
 
@@ -80,6 +80,34 @@ public class Task {
         Print the median among three numbers.
      */
     public int medianNumber(int a, int b, int c) {
+        return 0;
+    }
+
+    /*https://www.e-olymp.com/en/problems/906
+    Product of digits
+        Three digital number is given. Find the product of its digits.
+
+    Input
+        One three digital positive integer n.
+
+    Output
+        Print the product of digits in n.
+     */
+    public int productOfDigits(int digit) {
+        return 0;
+    }
+
+    /*https://www.e-olymp.com/en/problems/2
+    Digits
+        Find the number of digits in a nonnegative integer n.
+
+    Input
+        One nonnegative integer n (0 ≤ n ≤ 2 *109).
+
+    Output
+        Print the number of digits in number n.
+     */
+    public int numberOfDigits(int digit) {
         return 0;
     }
 }
