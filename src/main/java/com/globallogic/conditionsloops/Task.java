@@ -158,7 +158,10 @@ public class Task {
         Print the product of digits in n.
      */
     public int productOfDigits(int digit) {
-        return 0;
+        int firstDigit = digit / 100;
+        int secondDigit = (digit - firstDigit * 100) / 10;
+        int thirdDigit = digit % 10;
+        return firstDigit * secondDigit * thirdDigit;
     }
 
     /*https://www.e-olymp.com/en/problems/2
@@ -172,6 +175,6 @@ public class Task {
         Print the number of digits in number n.
      */
     public int numberOfDigits(int digit) {
-        return 0;
+        return String.valueOf(digit).length();
     }
 }
