@@ -91,6 +91,18 @@ public class Task {
         The singular is the number of a corresponding quarter, or 0 if unequivocally define a quarter it is impossible.
      */
     public int whichQuarter(int x, int y) {
+        if (x > 0 && y > 0) {
+            return 1;
+        }
+        if (x < 0 && y > 0) {
+            return 2;
+        }
+        if (x < 0 && y < 0) {
+            return 3;
+        }
+        if (x > 0 && y < 0) {
+            return 4;
+        }
         return 0;
     }
 
