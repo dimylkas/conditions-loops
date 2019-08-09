@@ -117,7 +117,14 @@ public class Task {
         Print the bigger digit between first and last. In case of equality, print "=" (without quotes).
     */
     public String firstOrLast(int number) {
-        return null;
+        int firstDigit = number / 100;
+        int lastDigit = number % 10;
+        if (firstDigit > lastDigit) {
+            return String.valueOf(firstDigit);
+        } else if (lastDigit > firstDigit) {
+            return String.valueOf(lastDigit);
+        }
+        return "=";
     }
 
     /*https://www.e-olymp.com/en/problems/108
