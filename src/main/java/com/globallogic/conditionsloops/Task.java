@@ -138,7 +138,13 @@ public class Task {
         Print the median among three numbers.
      */
     public int medianNumber(int a, int b, int c) {
-        return 0;
+        if (a > b && a < c) {
+            return a;
+        }
+        if (b > a && b < c) {
+            return b;
+        }
+        return c;
     }
 
     /*https://www.e-olymp.com/en/problems/906
