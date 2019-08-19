@@ -78,36 +78,36 @@ public class Task {
         Print the minimal sum to buy n disсs.
  */
     public int compactDiscs(int numberOfDiscs) {
-        int Pack_1 = 1;
-        int Pack_1Costs = 2;
+        int pack1 = 1;
+        int pack1Costs = 2;
 
-        int Pack_20 = 20;
-        int Pack_20Costs = 30;
+        int pack20 = 20;
+        int pack20Costs = 30;
 
-        int Pack_100 = 100;
-        int Pack_100Costs = 100;
+        int pack100 = 100;
+        int pack100Costs = 100;
 
         int numberCosts = 0;
 
-        if (numberOfDiscs >= Pack_100) {
+        if (numberOfDiscs >= pack100) {
             int numOf100 = 0;
-            numOf100 = numberOfDiscs / Pack_100;
-            numberOfDiscs = numberOfDiscs - (numOf100 * Pack_100);
-            numberCosts = numOf100 * Pack_100Costs;
+            numOf100 = numberOfDiscs / pack100;
+            numberOfDiscs = numberOfDiscs - (numOf100 * pack100);
+            numberCosts = numOf100 * pack100Costs;
         }
 
-        if (numberOfDiscs >= Pack_20) {
+        if (numberOfDiscs >= pack20) {
             int numOf20 = 0;
-            numOf20 = numberOfDiscs / Pack_20;
-            numberOfDiscs = numberOfDiscs - (numOf20 * Pack_20);
-            numberCosts += numOf20 * Pack_20Costs;
+            numOf20 = numberOfDiscs / pack20;
+            numberOfDiscs = numberOfDiscs - (numOf20 * pack20);
+            numberCosts += numOf20 * pack20Costs;
         }
 
-        if (numberOfDiscs >= Pack_1) {
+        if (numberOfDiscs >= pack1) {
             int numOf1 = 0;
-            numOf1 = numberOfDiscs / Pack_1;
-            numberOfDiscs = numberOfDiscs - (numOf1 * Pack_1);
-            numberCosts += numOf1 * Pack_1Costs;
+            numOf1 = numberOfDiscs / pack1;
+            numberOfDiscs = numberOfDiscs - (numOf1 * pack1);
+            numberCosts += numOf1 * pack1Costs;
         }
 
         return numberCosts;
@@ -200,7 +200,7 @@ public class Task {
         Print the product of digits in n.
      */
     public int productOfDigits(int digit) {
-        String stringOfDigits = "" + digit;
+        String stringOfDigits = String.valueOf(digit);
         String[] arrStringOfDigits = stringOfDigits.split("");
 
         int product = 1;
@@ -223,7 +223,7 @@ public class Task {
         Print the number of digits in number n.
      */
     public int numberOfDigits(int digit) {
-        String lineOfDigits = "" + digit;
+        String lineOfDigits = String.valueOf(digit);
         return lineOfDigits.length();
     }
 }
